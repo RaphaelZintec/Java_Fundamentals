@@ -45,6 +45,8 @@ public class Opdracht2 {
                 //dfdg
 
                 //ddddddddddddddddddddd
+
+                //dddddddddddddd
             }
         }
             System.out.println("Thank you for using our app and goodbye!");
