@@ -41,6 +41,7 @@ public class Opdracht2 {
                     doesNotMatch = false;
                 }
                 // hyhryhr
+                //dddddddddd
             }
         }
             System.out.println("Thank you for using our app and goodbye!");
