@@ -5,7 +5,7 @@ public class ForExample4 {
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         for (int i = 25; i >= 0; --i) {
-            System.out.println(alphabet.charAt(i));
+            System.out.println(alphabet.toLowerCase().charAt(i));
         }
     }
 }
