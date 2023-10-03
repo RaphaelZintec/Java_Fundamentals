@@ -1,7 +1,7 @@
 package be.intecbrussel.Les6.Opdracht2;
 import java.util.Scanner;
 import java.util.ArrayList;
-public class Opdracht3 {
+public class Opdracht3Nieuwe {
     public static void main(String[] args) {
         //ElektriciteitApp
 
@@ -10,10 +10,14 @@ public class Opdracht3 {
         ArrayList<String> namenVanVerbruiker = new ArrayList<String>();
         char addNewHouse = 'y';
         int numberOfHouses = 1;
-        int vermogenWattPerUur = 0;
-        int aanatlUrenPerDag = 0;
-        int aantalDagenPerMaand = 0;
+        int vermogenWattPerUurTotal = 0;
+        int aanatlUrenPerDagTotal = 0;
+        int aantalDagenPerMaandTotal = 0;
+        ArrayList<Integer> vermogenWattPerUurArray = new ArrayList<Integer>();
+        ArrayList<Integer> aanatlUrenPerDagArray = new ArrayList<Integer>();
+        ArrayList<Integer> aantalDagenPerMaandArray = new ArrayList<Integer>();
         int eenheidsPrijsElektriciteit = 0;
+        int eenheidsPrijsElektriciteitTotal = 0;
         int step = 1;
 
         //welcome msg
@@ -33,26 +37,30 @@ public class Opdracht3 {
                     }
                     case 2:{
                         System.out.println("2. Vermogen in watt per uur (only numbers): ");
-                        vermogenWattPerUur += Math.abs(myScanner.nextInt());
+                        vermogenWattPerUurArray.add(Math.abs(myScanner.nextInt()));
                         ++step;
                     }
                     case 3:{
                         System.out.println("3. Aantal uren per dag dat elektriciteit wordt gebruikt (only numbers): ");
-                        aanatlUrenPerDag += Math.abs(myScanner.nextInt());
+                        aanatlUrenPerDagArray.add(Math.abs(myScanner.nextInt()));
                         ++step;
                     }
                     case 4:{
                         System.out.println("4. Aantal dagen per maand waarop elektriciteit wordt gebruikt (only numbers): ");
-                        aantalDagenPerMaand += Math.abs(myScanner.nextInt());
-                        ++step;
-                    }
-                    case 5:{
-                        System.out.println("5. Eenheidsprijs voor elektriciteit (only numbers): ");
-                        eenheidsPrijsElektriciteit += Math.abs(myScanner.nextInt());
+                        aantalDagenPerMaandArray.add(Math.abs(myScanner.nextInt()));
                         step = 1;
                     }
-
                 }
+
+                for(int i=numberOfHouses-1; i<numberOfHouses; ++i){
+                    vermogenWattPerUurTotal += vermogenWattPerUurArray.get(i);
+                    aanatlUrenPerDagTotal += aanatlUrenPerDagArray.get(i);
+                    aantalDagenPerMaandTotal += aantalDagenPerMaandArray.get(i);
+                    eenheidsPrijsElektriciteit = (vermogenWattPerUurArray.get(i)*aanatlUrenPerDagArray.get(i))*aantalDagenPerMaandArray.get(i);
+                    eenheidsPrijsElektriciteitTotal += eenheidsPrijsElektriciteit;
+                }
+
+                System.out.println("Eenheidsprijs voor elektriciteit is: "+eenheidsPrijsElektriciteit);
 
                 System.out.println("Do you want to add a new house? (y/n) : ");
                 addNewHouse = (myScanner.next()).toCharArray()[0];
@@ -66,6 +74,7 @@ public class Opdracht3 {
                 System.out.println("Write only numbers when it's asked! Try again.");
                 myScanner.nextLine();
                 continue;
+                //System.out.println(e);
             }
         }while(addNewHouse == 'y');
 
@@ -74,11 +83,11 @@ public class Opdracht3 {
         for(String name: namenVanVerbruiker){
             System.out.println("- "+name);
         }
-        System.out.println("You have "+numberOfHouses+" houses");
-        System.out.println("De totaal van jouw Vermogen in watt per uur is: "+vermogenWattPerUur);
-        System.out.println("Aantal uren per dag dat elektriciteit wordt gebruikt is: "+aanatlUrenPerDag);
-        System.out.println("Aantal dagen per maand waarop elektriciteit wordt gebruikt is: "+aantalDagenPerMaand);
-        System.out.println("De totaal van jouw Eenheidsprijs voor elektriciteit is: "+eenheidsPrijsElektriciteit);
+        System.out.println("You have "+numberOfHouses+" house(s)");
+        System.out.println("De totaal van jouw Vermogen in watt per uur is: "+vermogenWattPerUurTotal);
+        System.out.println("Aantal uren per dag dat elektriciteit wordt gebruikt is: "+aanatlUrenPerDagTotal);
+        System.out.println("Aantal dagen per maand waarop elektriciteit wordt gebruikt is: "+aantalDagenPerMaandTotal);
+        System.out.println("De totaal van jouw Eenheidsprijs voor elektriciteit is: "+eenheidsPrijsElektriciteitTotal);
 
     }
 

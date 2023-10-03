@@ -40,13 +40,6 @@ public class Opdracht2 {
                     System.out.println("Congradulation: you found the correct number");
                     doesNotMatch = false;
                 }
-                //hyhryhr
-                //dddddddddd
-                //dfdg
-
-                //ddddddddddddddddddddd
-
-                //dddddddddddddd
             }
         }
             System.out.println("Thank you for using our app and goodbye!");
