@@ -3,7 +3,7 @@ package be.intecbrussel.Les6.Opdracht2;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Opdracht2 {
+public class HigherLowerApp {
     public static void main(String[] args) {
         //HigherLowerApp
 

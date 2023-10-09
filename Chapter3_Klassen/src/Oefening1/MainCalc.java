@@ -2,7 +2,7 @@ package Oefening1;
 
 import static Oefening1.Calculator.getModulo;
 
-public class MainCalculator {
+public class MainCalc {
     public static void main(String[] args) {
         Calculator myCalculator = new Calculator();
 
@@ -13,7 +13,7 @@ public class MainCalculator {
 
         //Oefening 2
         System.out.println("\nOefening 2");
-        System.out.println("Your number is: "+(myCalculator.checkEvenOnevenNumber(21) ? "Even" : "Oneven"));
+        System.out.println("Your number is: "+(myCalculator.checkEvenOnevenNumber(2480) ? "Even" : "Oneven"));
 
         //Oefening 3: int
         System.out.println("\nOefening 3 (int)");

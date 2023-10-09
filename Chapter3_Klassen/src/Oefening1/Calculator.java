@@ -15,13 +15,15 @@ public class Calculator {
         }
         return this.smallestNumber;
     }
-    public boolean checkEvenOnevenNumber(int number){
-        if(number%2==0){
-            return true;
-        }
-        else {
+    public boolean checkEvenOnevenNumber(Integer number){
+        String checkNumber = number.toString();
+        if(checkNumber.contains("1") || checkNumber.contains("3") || checkNumber.contains("5") || checkNumber.contains("7") || checkNumber.contains("9")){
             return false;
         }
+        else{
+            return true;
+        }
+
     }
 
     /*INT METHODS*/

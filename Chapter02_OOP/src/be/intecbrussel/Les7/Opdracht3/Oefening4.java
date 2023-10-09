@@ -4,14 +4,15 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Oefening4 {
-    /* 1. VARIABLES INIT
+    /*
+    * 1. VARIABLES INIT
     * userCredits = credits in game
-    * userSold = user real money in game
+    * userSold = user's $ in game
     * one ticket cost 3 credits
-    * the game sell min 20 credits for 5 real money
-    * dies have 2 faces
+    * the game sell min 20 credits for 5$
+    * dies have 20 faces
     * winning number is 13
-    * */
+    */
         public static int userCredits = 17;
         public static int userSold = 22;
         public static int numberOfPlayedTickets = 0;

@@ -1,7 +1,7 @@
 package be.intecbrussel.Les6.Opdracht2;
 import java.util.Scanner;
 import java.util.ArrayList;
-public class Opdracht3Nieuwe {
+public class ElektriciteitApp {
     public static void main(String[] args) {
         //ElektriciteitApp
 
@@ -65,7 +65,7 @@ public class Opdracht3Nieuwe {
                 System.out.println("Do you want to add a new house? (y/n) : ");
                 addNewHouse = (myScanner.next()).toCharArray()[0];
 
-                if (addNewHouse == 'y'){
+                if (Character.toLowerCase(addNewHouse) == 'y'){
                     ++numberOfHouses;
                     myScanner.nextLine();
                 }
@@ -76,7 +76,7 @@ public class Opdracht3Nieuwe {
                 continue;
                 //System.out.println(e);
             }
-        }while(addNewHouse == 'y');
+        }while(Character.toLowerCase(addNewHouse) == 'y');
 
         //Show resume
         System.out.println("We have calculated!\nDe namen van de verbruiker zijn: ");

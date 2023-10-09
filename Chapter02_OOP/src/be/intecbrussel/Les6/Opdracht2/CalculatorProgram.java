@@ -1,6 +1,6 @@
 package be.intecbrussel.Les6.Opdracht2;
 import java.util.Scanner;
-public class Opdracht1 {
+public class CalculatorProgram {
     public static void main(String[] args) {
             //CalculatorProgram
 
