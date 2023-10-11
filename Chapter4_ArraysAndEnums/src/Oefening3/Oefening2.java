@@ -1,5 +1,7 @@
 package Oefening3;
 
+import java.lang.reflect.Array;
+
 public class Oefening2 {
     public static void main(String[] args) {
         String[] firstArray  = {"Intec", "is", "the", "best!"};
@@ -19,5 +21,9 @@ public class Oefening2 {
         for (String e : secondArray) {
             System.out.println(e);
         }
+
     }
 }
+
+//010101101010101010101010
+//hello world
