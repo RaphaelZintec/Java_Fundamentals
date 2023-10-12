@@ -3,12 +3,17 @@ package Oefening1;
 import Les1.Car;
 
 public class Cat extends Animal{
+
     //ATTRIBUTS
-        private String food = "Wiskas";
+        private String food;
 
     //CONSTRUCTOR
         public Cat(){}
         public Cat(String food){
+            this.food = food;
+        }
+        public Cat(String food, String name, int age){
+            super(name, age);
             this.food = food;
         }
 

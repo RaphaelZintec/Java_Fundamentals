@@ -1,6 +1,7 @@
 package Oefening1;
 
 public class Animal {
+
     //ATTRIBUTS
         private String name;
         private int age;
@@ -9,6 +10,9 @@ public class Animal {
         public Animal(){}
         public Animal(String name){
             this.name = name;
+        }
+        public Animal(int age){
+            this.age = age;
         }
         public Animal(String name, int age){
             this.name = name;
@@ -19,7 +23,7 @@ public class Animal {
         public void setName(String name){
             this.name = name;
         }
-        public void setAge(String age){
+        public void setAge(int age){
             this.age = age;
         }
         public String getName(){

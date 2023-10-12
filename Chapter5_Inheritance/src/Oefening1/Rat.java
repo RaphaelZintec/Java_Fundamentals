@@ -1,12 +1,21 @@
 package Oefening1;
 
 public class Rat extends Animal{
+
     //ATTRIBUTS
-        private String disease = "Salmonellose";
+        private String disease;
 
     //CONSTRUCTOR
         public Rat(){}
         public Rat(String disease){
+            this.disease = disease;
+        }
+        public Rat(String disease, int age){
+            super(age);
+            this.disease = disease;
+        }
+        public Rat(String disease, String name, int age){
+            super(name, age);
             this.disease = disease;
         }
 
