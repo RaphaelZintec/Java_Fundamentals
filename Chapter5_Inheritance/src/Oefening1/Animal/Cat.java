@@ -1,6 +1,4 @@
-package Oefening1;
-
-import Les1.Car;
+package Oefening1.Animal;
 
 public class Cat extends Animal{
 

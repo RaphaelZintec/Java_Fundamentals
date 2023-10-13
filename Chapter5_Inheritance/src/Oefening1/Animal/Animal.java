@@ -1,4 +1,4 @@
-package Oefening1;
+package Oefening1.Animal;
 
 public class Animal {
 
