@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Oefening3 {
     public static void main(String[] args) {
-        String[] myArray = {"New York", "Amsterdam", "London", "Brussel", "Paris", "Madrid", "Brussel", "Monaco", "Amsterdam", "Leuven"};
+        String[] myArray = {"Amsterdam", "New York", "Amsterdam", "London", "Brussel", "Paris", "Madrid", "Brussel", "Monaco", "Amsterdam", "Leuven"};
 
         //Show visited city twice 1 time
         //i=1 i2=8 -> Amsterdam

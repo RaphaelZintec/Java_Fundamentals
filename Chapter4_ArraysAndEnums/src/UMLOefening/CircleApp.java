@@ -3,7 +3,8 @@ package UMLOefening;
 import UMLOefening.Circle;
 
 import static UMLOefening.Circle.ANGLES;
-import static UMLOefening.Circle.getCount;
+//import static UMLOefening.Circle.getCount;
+import static java.lang.Math.random;
 
 public class CircleApp {
     public static void main(String[] args) {
@@ -29,7 +30,9 @@ public class CircleApp {
 
         //Call statics
         System.out.println("\nStatics");
-        System.out.println("Static method getCount(): "+getCount());
+        System.out.println("Static method getCount(): "+Circle.getCount());
         System.out.println("Static constant ANGLES: "+ANGLES);
+
+        System.out.println(random());
     }
 }
