@@ -3,26 +3,29 @@ package UMLOefening;
 public class Circle {
     //ATTRIBUTS
         public static final int ANGLES = 0;
-        private static int count;
+        private static int count = 0;
         private int x;
         private int y;
         private int radius;
 
     //CONSTRUCTORS
         public Circle(){
+            ++count;
         }
 
         public Circle(int radius) {
+            ++count;
             this.radius = radius;
         }
 
         public Circle(int x, int y, int radius) {
+            ++count;
             this.x = x;
             this.y = y;
             this.radius = radius;
         }
         public Circle(Circle c){
-            this.count = c.count;
+            ++count;
             this.x = c.x;
             this.y = c.y;
             this.radius = c.radius;
