@@ -19,7 +19,7 @@ public class Vehicle {
             this.typeOfVehicle = typeOfVehicle;
         }
 
-        public void honk(){
+        public void honk2(){
             System.out.println("Bip Bip");
         }
 

@@ -20,12 +20,13 @@ public class Car extends Vehicle{
             this.brandName = brandName;
         }
 
+
         public void honk(){
             System.out.println("Tuut tuut!");
         }
 
         public void sound(){
-            super.honk();
+            super.honk2();
         }
 
 }
