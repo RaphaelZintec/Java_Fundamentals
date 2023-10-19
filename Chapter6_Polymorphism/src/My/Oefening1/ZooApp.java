@@ -1,4 +1,4 @@
-package Oefening1;
+package My.Oefening1;
 
 public class ZooApp {
     public static void main(String[] args) {

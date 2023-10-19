@@ -1,4 +1,4 @@
-package Test;
+package My.MyTests.Test;
 
 public enum Test1 {
     //CONSTANT

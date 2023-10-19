@@ -1,4 +1,4 @@
-package Test2;
+package My.MyTests.Test2;
 
 public class TestApp {
     public static void main(String[] args) {

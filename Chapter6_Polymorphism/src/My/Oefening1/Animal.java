@@ -1,4 +1,4 @@
-package Oefening1;
+package My.Oefening1;
 
 import java.util.Objects;
 
