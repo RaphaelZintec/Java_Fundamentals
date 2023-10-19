@@ -30,16 +30,16 @@ public class Shape {
         }
 
     //METHODS
-        public void setArea(double area){
-            this.area = area;
-        }
+        //CIRCLE
         public void setArea(double pi, double radius){
-            this.area = pi * Math.pow(radius, 2);
+            this.area = pi * (radius * radius);
         }
+        //TRIANGLE
         public void setArea(double side1, double side2, double side3){
             double halfPerimeter = (side1 + side2 + side3) / 2;
             this.area = Math.sqrt(halfPerimeter * (halfPerimeter - side1) * (halfPerimeter - side2) * (halfPerimeter - side3));
         }
+        //RECTANGLE
         public void setArea(double length, double width, boolean isRectangle){
             if(isRectangle){
                 this.area = length * width;
@@ -48,12 +48,10 @@ public class Shape {
         public double getArea() {
             return area;
         }
-        public void setSides(int sides) {
-            this.sides = sides;
-        }
         public int getSides() {
             return sides;
         }
+
 
     //OVERRIDES
         @Override
