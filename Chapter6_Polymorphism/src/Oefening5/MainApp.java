@@ -11,5 +11,13 @@ public class MainApp {
         System.out.println(circle.toString());
         System.out.println(triangle.toString());
         System.out.println(rectangle.toString());
+
+        System.out.println(circle instanceof Object);
+        System.out.println(circle instanceof Shape);
+        System.out.println(circle instanceof Circle);
+        System.out.println(shape instanceof Object);
+        System.out.println(shape instanceof Shape);
+        System.out.println(shape instanceof Circle);
+
     }
 }
