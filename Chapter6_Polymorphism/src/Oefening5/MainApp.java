@@ -7,6 +7,11 @@ public class MainApp {
         Triangle triangle = new Triangle(22, 10, 22);
         Rectangle rectangle = new Rectangle(10, 5);
 
+        Shape shape2 = new Circle(0,10);
+        //Circle circle2 = new Shape(0,10);
+        System.out.println(shape2.toString());
+
+/*
         System.out.println(shape.toString());
         System.out.println(circle.toString());
         System.out.println(triangle.toString());
@@ -18,6 +23,8 @@ public class MainApp {
         System.out.println(shape instanceof Object);
         System.out.println(shape instanceof Shape);
         System.out.println(shape instanceof Circle);
+
+ */
 
     }
 }
