@@ -1,4 +1,4 @@
-package Les1;
+package Les1.Animal;
 
 public class Dog extends Animal{
     @Override

@@ -1,4 +1,4 @@
-package Les1;
+package Les1.Animal;
 
 abstract class Animal {
 
