@@ -15,7 +15,7 @@ public class CrazyRobot extends Robot{
     //METHODS
         @Override
         public String toString() {
-            return "BendingRobot{" +
+            return "CrazyRobot{" +
                     "orginal name=" + originalName +
                     ", reversed name=" + getUnitName() +
                     '}';

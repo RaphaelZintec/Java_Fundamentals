@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter5_Inheritance/Chapter5_Inheritance.iml" filepath="$PROJECT_DIR$/Chapter5_Inheritance/Chapter5_Inheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter6_Polymorphism/Chapter6_Polymorphism.iml" filepath="$PROJECT_DIR$/Chapter6_Polymorphism/Chapter6_Polymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter7_AbstractClass/Chapter7_AbstractClass.iml" filepath="$PROJECT_DIR$/Chapter7_AbstractClass/Chapter7_AbstractClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter8_Interface/Chapter8_Interface.iml" filepath="$PROJECT_DIR$/Chapter8_Interface/Chapter8_Interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java_Fundamentals.iml" filepath="$PROJECT_DIR$/Java_Fundamentals.iml" />
     </modules>
   </component>

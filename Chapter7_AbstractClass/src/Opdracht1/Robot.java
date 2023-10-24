@@ -1,6 +1,6 @@
 package Opdracht1;
 
-public abstract class Robot {
+public class Robot {
     //ATTRIBUTS
         private String unitName;
 
@@ -21,6 +21,4 @@ public abstract class Robot {
         public String getUnitName(){
             return unitName;
         }
-        @Override
-        public abstract String toString();
 }

@@ -2,31 +2,26 @@ package Opdracht1;
 
 public class LiftingRobot extends Robot{
     //ATTRIBUTS
-        private double MAX_LIFT_HEIGHT;
-        private double absHeight;
+        private double maxLiftHeight;
 
     //CONSTRUCTOR
         public LiftingRobot(String unitName, double maxLiftHeight){
             super(unitName);
-            this.MAX_LIFT_HEIGHT = maxLiftHeight;
+            this.maxLiftHeight = maxLiftHeight;
         }
 
     //METHODS
         public void lift(double height){
-            this.absHeight = Math.abs(height);
-            if(absHeight == 0)
-                System.out.println("Robot remains at his initial position");
-            else if(absHeight <= MAX_LIFT_HEIGHT)
-                System.out.println("Robot lifted successfully up "+absHeight+" meters");
+            if(height <= maxLiftHeight)
+                System.out.println("The lifting is successful with a height of "+height+" meters");
             else
-                System.out.println("Robot cannot lift more than "+MAX_LIFT_HEIGHT+" meters" );
+                System.out.println("Lifting by "+height+" meters is not possible, the requested height is too high, max is "+maxLiftHeight );
         }
         @Override
         public String toString() {
-            return "BendingRobot{" +
+            return "LiftingRobot{" +
                     "name=" + getUnitName() +
-                    ", height=" + absHeight +
-                    ", MAX_LIFT_HEIGHT=" + MAX_LIFT_HEIGHT +
+                    ", MAX_LIFT_HEIGHT=" + maxLiftHeight +
                     '}';
         }
 }

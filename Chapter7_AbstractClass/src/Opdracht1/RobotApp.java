@@ -4,29 +4,24 @@ public class RobotApp {
     public static void main(String[] args) {
 
         //INIT
-        BendingRobot robot1 = new BendingRobot("Peter", 50);
-        LiftingRobot robot2 = new LiftingRobot("Duck", 50);
-        CrazyRobot robot3 = new CrazyRobot(new StringBuilder("Kilian"));
-
-        //TEST WITH 0
-        System.out.println();
-        robot1.bend(0);
-        robot2.lift(0);
+        BendingRobot bendingRobot = new BendingRobot("Wall-E", 360);
+        LiftingRobot liftingRobot = new LiftingRobot("R2-D2", 50);
+        CrazyRobot   crazyRobot   = new CrazyRobot(new StringBuilder("C-3PO"));
 
         //TEST WITH GOOD VALUE
         System.out.println();
-        robot1.bend(10);
-        robot2.lift(10);
+        bendingRobot.bend(90);
+        liftingRobot.lift(40);
 
         //TEST WITH VALUE HIGHER THAN MAX
         System.out.println();
-        robot1.bend(100);
-        robot2.lift(100);
+        bendingRobot.bend(360);
+        liftingRobot.lift(100);
 
         //TOSTRING()
         System.out.println();
-        System.out.println(robot1.toString());
-        System.out.println(robot2.toString());
-        System.out.println(robot3.toString());
+        System.out.println(bendingRobot.toString());
+        System.out.println(liftingRobot.toString());
+        System.out.println(crazyRobot.toString());
     }
 }
