@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter7_AbstractClass/Chapter7_AbstractClass.iml" filepath="$PROJECT_DIR$/Chapter7_AbstractClass/Chapter7_AbstractClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter8_Interface/Chapter8_Interface.iml" filepath="$PROJECT_DIR$/Chapter8_Interface/Chapter8_Interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java_Fundamentals.iml" filepath="$PROJECT_DIR$/Java_Fundamentals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projects/Projects.iml" filepath="$PROJECT_DIR$/Projects/Projects.iml" />
     </modules>
   </component>
 </project>
