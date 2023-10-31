@@ -6,7 +6,7 @@ public class ClawMachine extends Casino {
 
     private int numberOfTries = 0; // Tracker of tries(Счетчик попыток)
 
-    private int currentPayout;
+    private int currentPayout = 10000;
 
     public ClawMachine(int playerBalance){
 
