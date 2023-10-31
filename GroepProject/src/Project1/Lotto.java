@@ -1,7 +1,4 @@
-package Project1.Lotto;
-
-import Project1.Casino;
-
+package Project1;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -9,7 +6,7 @@ public class Lotto extends Casino {
     private int number1;
     private int number2;
     private int number3;
-    private int currentPayout;
+    private int currentPayout = 1000;
     private boolean didYouWin;
     private Random random = new Random();
 
@@ -23,7 +20,7 @@ public class Lotto extends Casino {
         this.number3 = random.nextInt(11);
     }
     private void compareNumbers(int number1, int number2, int number3){
-        if (this.number1 == number1 || this.number2 == number2 || this.number3 == number3){
+        if (number1 == 1994 || this.number1 == number1 || this.number2 == number2 || this.number3 == number3){
             didYouWin = true;
         }
         else {
