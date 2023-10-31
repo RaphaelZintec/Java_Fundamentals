@@ -6,7 +6,7 @@ public class Lotto extends Casino {
     private int number1;
     private int number2;
     private int number3;
-    private int currentPayout = 1000;
+    private int currentPayout = 10000;
     private boolean didYouWin;
     private Random random = new Random();
 

@@ -7,7 +7,7 @@ public class MainApp {
         System.out.println("Welcome to our casino!");
         Scanner scanner = new Scanner(System.in);
         int playerChoice = 0;
-        int playerBalance = 500;
+        int playerBalance = 5000;
         Casino[] casino = {new ClawMachine(playerBalance), new SlotMachine(playerBalance), new Lotto(playerBalance), new Roulette(playerBalance)};
         do {
             System.out.println("\nChoose your game: 1.Claw Machine (1€) 2.Slot machine (50€) 3.Lotto (100€) 4.Roulette (200€) ");

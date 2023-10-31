@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class SlotMachine extends Casino {
-    int currentPayout = 1000;
+    int currentPayout = 10000;
     int odds;
     int youWin = 0;
 
