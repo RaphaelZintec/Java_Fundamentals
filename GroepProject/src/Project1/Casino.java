@@ -1,6 +1,16 @@
 package Project1;
 
-public class Casino {
-    public static int casinoBalance = 1000;
-    public static int playerBalance = 500;
+import java.util.Scanner;
+
+public abstract class Casino {
+    public int playerBalance;
+    public int costPerTicket;
+
+    public Casino(int playerBalance, int costPerTicket){
+        this.playerBalance = playerBalance;
+        this.costPerTicket = costPerTicket;
+    }
+
+    public abstract void launch(Scanner scanner);
 }
+
