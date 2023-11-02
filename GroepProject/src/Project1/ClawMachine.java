@@ -1,7 +1,5 @@
 package Project1;
-
 import java.util.Scanner;
-
 public class ClawMachine extends Casino {
 
     private int numberOfTries = 0; // Tracker of tries(Счетчик попыток)
@@ -30,8 +28,16 @@ public class ClawMachine extends Casino {
 
 
     public void playAGame(int moneyPaid) {
+        if (moneyPaid==3){
+            System.out.println("Congratulations! You won super big prize!");
+            currentPayout++;
+            playerBalance--;
+            System.out.println("Player balance: " + playerBalance + " €");
 
-        if (moneyPaid >= 1) {
+            System.out.println("Current payout: " + currentPayout + " €");
+        }
+
+        else if (moneyPaid >= 1) {
 
             for (int i = 0; i < moneyPaid; i++) {
 
@@ -41,49 +47,23 @@ public class ClawMachine extends Casino {
 
                     numberOfTries++;
 
-// Логика игры - решение о выигрыше или проигрыше
-
-//Logica of game - desicion of win or lose
-
-/*if (Math.random() > 0.5) {
-
-System.out.println("Congratulation you win a prise!");
-
-playerBalance += 1; // Supposer what prise 1 €(Предположим, что приз - 1 €)
-
-currentPayout -= 1;
-
-} else {
-
-System.out.println("Unfortunately you didn't win this time.");
-
-playerBalance -= 1;
-
-currentPayout += 1;
-
-}*/
-
                     playerBalance -= 1;
 
                     currentPayout += 1;
 
                     if (readyToWin()) {
 
-                        System.out.println("Ready to win (Level 1): true");
+                        System.out.println("Congratulations! You won the prize!");
 
                     } else {
 
-                        System.out.println("Ready to win (Level 1): false");
+                        System.out.println("Sorry you dont win :(");
 
                     }
 
                     if (readyToWinBigTime()) {
 
-                        System.out.println("Ready to big win (Level 2): true");
-
-                    } else {
-
-                        System.out.println("Ready to big win (Level 2): false");
+                        System.out.println("Congratulations! You won the big prize!");
 
                     }
 
@@ -93,7 +73,7 @@ currentPayout += 1;
 
                 } else {
 
-                    System.out.println("Maximum number of attempts reached (15).");//Достигнуто максимальное количество попыток
+                    System.out.println("Maximum number of attempts reached (15).");// Maximaal aantal pogingen bereikt (Достигнуто максимальное количество попыток)
 
                     break;
 
@@ -112,8 +92,12 @@ currentPayout += 1;
     @Override
     public void launch(Scanner scanner) {
 
-        playAGame(1);
+        System.out.println("How much would you spent");
+        int money = scanner.nextInt();
+        playAGame(money);
 
     }
 
 }
+
+
