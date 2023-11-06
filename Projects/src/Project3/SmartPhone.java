@@ -4,6 +4,8 @@ public class SmartPhone implements ICamera, IGPS, IRadio, ISimCard, IWifi{
     private final double PRICE;
     private final String BRAND;
     private int numberOfPhotos;
+    private boolean internetConnection;
+    private String[] photos = {"All photo album", "Hollydays photo album", "WhatsApp photo album"};
 
     public SmartPhone(double PRICE, String BRAND){
         this.PRICE = PRICE;
@@ -18,14 +20,19 @@ public class SmartPhone implements ICamera, IGPS, IRadio, ISimCard, IWifi{
         return BRAND;
     }
 
+    public int getNumberOfPhotos() {
+        return numberOfPhotos;
+    }
+
     @Override
     public void shootAPhoto(double amountOfPhotos) {
+        numberOfPhotos+=amountOfPhotos;
         System.out.println("Phone took "+amountOfPhotos+" photos");
     }
 
     @Override
     public String[] viewPhotos() {
-        return new String[0];
+        return photos;
     }
 
     @Override
@@ -35,7 +42,11 @@ public class SmartPhone implements ICamera, IGPS, IRadio, ISimCard, IWifi{
 
     @Override
     public void navigate() {
-        System.out.println("GPS working");
+        if(internetConnection){
+            System.out.println("Navigation on internet started");
+        } else{
+            System.out.println("You cannot navigate without internet connection");
+        }
     }
 
     @Override
@@ -50,11 +61,13 @@ public class SmartPhone implements ICamera, IGPS, IRadio, ISimCard, IWifi{
 
     @Override
     public void connect(String internetConnection) {
+        this.internetConnection = true;
         System.out.println("Internet connected to "+internetConnection);
     }
 
     @Override
     public void disconnect(String internetConnection) {
+        this.internetConnection = false;
         System.out.println("Internet disconnected from "+internetConnection);
     }
 

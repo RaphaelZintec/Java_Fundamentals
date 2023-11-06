@@ -15,7 +15,7 @@ public class WhyPhoneApp {
         System.out.println("\nPrice:\n"+phone.getPRICE());
         System.out.println("\nBrand:\n"+phone.getBRAND());
         System.out.println("\nshootAPhoto:"); phone.shootAPhoto(2);
-        System.out.println("\nviewPhotos:\n"+phone.viewPhotos());
+        System.out.println("\nviewPhotos:\n"+phone.viewPhotos()[0]+" contain "+phone.getNumberOfPhotos()+" photos");
         System.out.println("\nlocate:\n"+phone.locate(30.33,44.55));
         System.out.println("\nnavigate:"); phone.navigate();
         System.out.println("\nplayChannel:"); phone.playChannel(333.33);
