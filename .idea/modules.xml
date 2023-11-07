@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Chapter01_BasicProgramming/Chapter01_BasicProgramming.iml" filepath="$PROJECT_DIR$/Chapter01_BasicProgramming/Chapter01_BasicProgramming.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter02_OOP/Chapter02_OOP.iml" filepath="$PROJECT_DIR$/Chapter02_OOP/Chapter02_OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter10_Lambdas/Chapter10_Lambdas.iml" filepath="$PROJECT_DIR$/Chapter10_Lambdas/Chapter10_Lambdas.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter3_Klassen/Chapter3_Klassen.iml" filepath="$PROJECT_DIR$/Chapter3_Klassen/Chapter3_Klassen.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter4_ArraysAndEnums/Chapter4_ArraysAndEnums.iml" filepath="$PROJECT_DIR$/Chapter4_ArraysAndEnums/Chapter4_ArraysAndEnums.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter5_Inheritance/Chapter5_Inheritance.iml" filepath="$PROJECT_DIR$/Chapter5_Inheritance/Chapter5_Inheritance.iml" />
