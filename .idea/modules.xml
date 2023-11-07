@@ -4,12 +4,14 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Chapter01_BasicProgramming/Chapter01_BasicProgramming.iml" filepath="$PROJECT_DIR$/Chapter01_BasicProgramming/Chapter01_BasicProgramming.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter02_OOP/Chapter02_OOP.iml" filepath="$PROJECT_DIR$/Chapter02_OOP/Chapter02_OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter10_Lambdas/Chapter10_Lambdas.iml" filepath="$PROJECT_DIR$/Chapter10_Lambdas/Chapter10_Lambdas.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter3_Klassen/Chapter3_Klassen.iml" filepath="$PROJECT_DIR$/Chapter3_Klassen/Chapter3_Klassen.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter4_ArraysAndEnums/Chapter4_ArraysAndEnums.iml" filepath="$PROJECT_DIR$/Chapter4_ArraysAndEnums/Chapter4_ArraysAndEnums.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter5_Inheritance/Chapter5_Inheritance.iml" filepath="$PROJECT_DIR$/Chapter5_Inheritance/Chapter5_Inheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter6_Polymorphism/Chapter6_Polymorphism.iml" filepath="$PROJECT_DIR$/Chapter6_Polymorphism/Chapter6_Polymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter7_AbstractClass/Chapter7_AbstractClass.iml" filepath="$PROJECT_DIR$/Chapter7_AbstractClass/Chapter7_AbstractClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter8_Interface/Chapter8_Interface.iml" filepath="$PROJECT_DIR$/Chapter8_Interface/Chapter8_Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter9_NestedClass/Chapter9_NestedClass.iml" filepath="$PROJECT_DIR$/Chapter9_NestedClass/Chapter9_NestedClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/GroepProject/GroepProject.iml" filepath="$PROJECT_DIR$/GroepProject/GroepProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java_Fundamentals.iml" filepath="$PROJECT_DIR$/Java_Fundamentals.iml" />
       <module fileurl="file://$PROJECT_DIR$/Projects/Projects.iml" filepath="$PROJECT_DIR$/Projects/Projects.iml" />
