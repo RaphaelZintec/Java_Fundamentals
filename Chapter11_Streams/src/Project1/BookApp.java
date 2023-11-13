@@ -31,7 +31,7 @@ public class BookApp {
 
         System.out.println("\n#3 Sort A-Z by title");
         Book.printSortedByTitle(books);
-
+//
         System.out.println("\n#4 Number of books per authors");
         //Book.countBooksPerAuthor(books);
 

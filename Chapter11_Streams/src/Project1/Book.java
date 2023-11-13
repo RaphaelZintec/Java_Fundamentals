@@ -66,6 +66,6 @@ public class Book {
         Book[] booksReleasedIn2016 = Arrays.stream(books).filter(b->b.getReleaseDate().getYear() == 2016).toArray(Book[]::new);
         for (Book b : booksReleasedIn2016){
             System.out.println(b.title+" by "+b.getAuthor().getFirstName()+" "+b.getAuthor().getLastName());
-        }
+        } //
     }
 }
