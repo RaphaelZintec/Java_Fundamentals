@@ -1,4 +1,4 @@
-package Project2;
+package Project4_Streams.Project2;
 
 public class ScoreInfo {
     private int score;
@@ -7,6 +7,14 @@ public class ScoreInfo {
     public ScoreInfo(int score, Student student) {
         this.score = score;
         this.student = student;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public Student getStudent() {
+        return student;
     }
 
     @Override

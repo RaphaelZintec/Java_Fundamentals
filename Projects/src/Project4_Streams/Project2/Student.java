@@ -1,4 +1,4 @@
-package Project2;
+package Project4_Streams.Project2;
 
 public class Student extends Person {
     private int id;
@@ -7,7 +7,7 @@ public class Student extends Person {
     public Student(){getIncrementId();}
     public Student(String name, String lastName) {
         super(name, lastName);
-        getIncrementId();
+        id = getIncrementId();
     }
 
     private static int getIncrementId() {
@@ -18,6 +18,7 @@ public class Student extends Person {
     public String toString() {
         return "Student{" +
                 "id=" + id +
+                ", name=" + getName() + " " + getLastName() +
                 '}';
     }
 }
