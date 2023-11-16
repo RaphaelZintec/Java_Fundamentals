@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class Oefening2 {
     public static void main(String[] args) {
-        List<Integer> listNumbers  = new ArrayList<>();
+        ArrayList<Integer> listNumbers  = new ArrayList<>();
         String numbers = "";
         Random random = new Random();
 

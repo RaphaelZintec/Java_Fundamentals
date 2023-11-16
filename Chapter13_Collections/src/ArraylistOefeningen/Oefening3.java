@@ -1,11 +1,10 @@
 package ArraylistOefeningen;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Oefening3 {
     public static void main(String[] args) {
-        List<String> words  = new ArrayList<>();
+        ArrayList<String> words  = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         String word = "";
 
