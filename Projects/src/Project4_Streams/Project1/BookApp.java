@@ -1,9 +1,6 @@
-package Project1;
+package Project4_Streams.Project1;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class BookApp {
     public static void main(String[] args) {
@@ -31,9 +28,9 @@ public class BookApp {
 
         System.out.println("\n#3 Sort A-Z by title");
         Book.printSortedByTitle(books);
-//
+
         System.out.println("\n#4 Number of books per authors");
-        //Book.countBooksPerAuthor(books);
+        Book.countBooksPerAuthor(books);
 
         System.out.println("\n#5 Books released in 2016");
         Book.printBooksReleasedIn2016(books);

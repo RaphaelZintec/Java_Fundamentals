@@ -1,4 +1,4 @@
-package Project1;
+package Project4_Streams.Project1;
 
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -51,16 +51,13 @@ public class Book {
         }
     }
     public static void countBooksPerAuthor(Book[] books){
-        Map<Person, Integer> booksPerAuthor = new HashMap<>();
-
-        for (Book book : books) {
-            Person author = book.getAuthor();
-            booksPerAuthor.put(author, booksPerAuthor.getOrDefault(author, 0) + 1);
+        Map<Person, Integer> hashMap = new HashMap<>();
+        for (Book b : books) {
+            hashMap.put(b.getAuthor(), hashMap.getOrDefault(b.getAuthor(), 0)+1);
         }
-
-        // Imprimer le résultat
-        booksPerAuthor.forEach((author, count) ->
-                System.out.println(author.getFirstName() + " " + author.getLastName() + ": " + count + " books"));
+        hashMap.forEach((k,v)->{
+            System.out.println(k.getFirstName() + " " + k.getLastName() + ": "+ v);
+        });
     }
     public static void printBooksReleasedIn2016(Book[] books){
         Book[] booksReleasedIn2016 = Arrays.stream(books).filter(b->b.getReleaseDate().getYear() == 2016).toArray(Book[]::new);
