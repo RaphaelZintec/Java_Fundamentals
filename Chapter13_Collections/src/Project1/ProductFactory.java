@@ -8,7 +8,6 @@ public class ProductFactory {
     private String[] healthProducts     = {"Face cream", "Vitamins", "Eye drops", "Toothpaste", "Shampoo"};
     private String[] electricProducts   = {"Hair dryer", "Vacuum", "Mixer", "Washing machine", "Dishwasher"};
 
-
     public ProductFactory(ProductSorter productSorter) {
         this.productSorter = productSorter;
     }
