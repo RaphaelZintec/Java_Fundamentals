@@ -1,6 +1,10 @@
 package Project5.IcecreamShop.intecbrussel.sellers;
 
-import be.intecbrussel.eatables.*;
+
+
+import Project5.IcecreamShop.intecbrussel.eatables.*;
+
+import Project5.IcecreamShop.intecbrussel.sellers.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;

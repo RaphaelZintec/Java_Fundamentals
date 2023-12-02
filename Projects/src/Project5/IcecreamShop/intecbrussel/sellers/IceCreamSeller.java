@@ -1,6 +1,6 @@
 package Project5.IcecreamShop.intecbrussel.sellers;
 
-import be.intecbrussel.eatables.*;
+import Project5.IcecreamShop.intecbrussel.eatables.*;
 
 public interface IceCreamSeller extends Profitable{
     Cone orderCone(Cone.Flavor[] balls);

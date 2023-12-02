@@ -1,6 +1,6 @@
 package Project5.IcecreamShop.intecbrussel.sellers;
 
-import be.intecbrussel.eatables.Magnum;
+import Project5.IcecreamShop.intecbrussel.eatables.*;
 
 public class PriceList {
 

@@ -20,16 +20,25 @@ public class Product {
     public int getProductID() {
         return productID;
     }
+
     @Override
-    public boolean equals(Object o) {
+    /*public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Product product)) return false;
-        return productID == product.productID;
+        return getProductID() == product.getProductID();
+    }*/
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Product)) return false;
+        Product product = (Product) o; // Effectuer un moulage explicite
+        return getProductID() == product.getProductID();
     }
+
     @Override
     public int hashCode() {
-        return Objects.hash(productID);
+        return Objects.hash(getProductID());
     }
+
     @Override
     public String toString() {
         return "#"+productID+" "+name;

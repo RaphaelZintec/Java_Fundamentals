@@ -1,8 +1,7 @@
 package Project5.IcecreamShop.intecbrussel.application;
 
-import be.intecbrussel.eatables.*;
-import be.intecbrussel.sellers.*;
-
+import Project5.IcecreamShop.intecbrussel.eatables.*;
+import Project5.IcecreamShop.intecbrussel.sellers.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
