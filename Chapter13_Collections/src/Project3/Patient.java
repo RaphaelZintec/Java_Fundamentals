@@ -108,21 +108,21 @@ public class Patient implements Comparable<Patient>{
     }
 
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Patient patient)) return false;
-        return age == patient.age && temperature == patient.temperature && unknownVirus == patient.unknownVirus && ensured == patient.ensured && Objects.equals(nationalRegistryNumber, patient.nationalRegistryNumber) && Objects.equals(fullName, patient.fullName);
-    }
-    @Override
-    public int hashCode() {
-        return Objects.hash(nationalRegistryNumber, fullName, age, temperature, unknownVirus, ensured);
+        return Objects.equals(nationalRegistryNumber, patient.nationalRegistryNumber) && Objects.equals(fullName, patient.fullName);
     }
 
     @Override
-    public int compareTo(Patient o) {
-            return 0;
+    public int hashCode() {
+        return Objects.hash(nationalRegistryNumber, fullName);
+    }
+
+    @Override
+    public int compareTo(Patient o){
+        return 0;
     }
 
     @Override
