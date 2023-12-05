@@ -122,18 +122,17 @@ public class Patient implements Comparable<Patient>{
 
     @Override
     public int compareTo(Patient o) {
-        return o.age-this.age;
+            return 0;
     }
 
     @Override
     public String toString() {
-        return "Patient{" +
-                "nationalRegistryNumber='" + nationalRegistryNumber + '\'' +
-                ", fullName='" + fullName + '\'' +
-                ", age=" + age +
-                ", temperature=" + temperature +
-                ", unknownVirus=" + unknownVirus +
-                ", ensured=" + ensured +
-                '}';
+        return "\uD83D\uDC64 " +
+                "nationalRegistryNumber=" + nationalRegistryNumber +
+                ", fullName=" +     String.format("%-24s", fullName+",") +
+                " age=" +           String.format("%-3s", age+",") +
+                " temperature=" +   String.format("%-3s", temperature+",") +
+                " unknownVirus=" +  String.format("%-6s", unknownVirus+",") +
+                " ensured=" + ensured;
     }
 }
