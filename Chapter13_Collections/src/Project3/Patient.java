@@ -127,7 +127,8 @@ public class Patient implements Comparable<Patient>{
 
     @Override
     public String toString() {
-        return "\uD83D\uDC64 " +
+        String avatar = fullName.equals("JIMMY CHOO") ? "\uD83D\uDC68\uD83C\uDFFB" :"👤";
+        return avatar +
                 "nationalRegistryNumber=" + nationalRegistryNumber +
                 ", fullName=" +     String.format("%-24s", fullName+",") +
                 " age=" +           String.format("%-3s", age+",") +
