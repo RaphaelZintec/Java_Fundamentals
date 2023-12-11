@@ -7,7 +7,7 @@ public class MainApp {
         Thread thread2 = new Thread(myThreadRunnable);
 
         thread1.start();
-        thread1.join(3000);
+        Thread.sleep(1000);
         thread2.start();
     }
 }
