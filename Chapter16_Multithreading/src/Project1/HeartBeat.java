@@ -16,9 +16,10 @@ public class HeartBeat implements Runnable{
             try {
                 Thread.sleep(miliSecondsBetweenBeats);
             } catch (InterruptedException e) {
-                System.out.println("❤️ of "+person.getName()+" stopped beating!");
+                System.out.println("\u001B[41m⚠️⚠️⚠️ "+person.getAvatar()+"❤️ stopped beating! ⚠️⚠️⚠️\u001B[0m");
+                break;
             }
-            System.out.println("❤️ of "+person.getName()+" is beating at "+miliSecondsBetweenBeats+" miliseconds");
+            System.out.println(person.getAvatar()+"❤️ beating at "+miliSecondsBetweenBeats+" miliseconds");
         }
     }
 
