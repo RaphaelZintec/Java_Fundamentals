@@ -6,10 +6,12 @@ import java.util.concurrent.TimeUnit;
 public class VillainSpot {
     public static void main(String[] args) {
 
+
         //INIT TIMER
         Random random = new Random();
-        int randomTimer = random.nextInt(30);
+        int randomTimer = random.nextInt(30000);
         System.out.println("timer: "+ randomTimer);
+        System.exit(1);
 
         //THIS THREAD IS TO SHOW EACH SECOND
         Thread threadBombTimer = new Thread(()-> {
