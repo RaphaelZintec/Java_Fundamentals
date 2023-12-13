@@ -1,4 +1,4 @@
-package Simple;
+package ZwakkePunten.Part1.multithread_notify_wait;
 
 public class Stock{
     private int totalQuantity;
